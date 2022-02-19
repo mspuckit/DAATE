@@ -170,13 +170,39 @@
       </div>
     </section> <!-- End ArchLogo Section -->
 
+    We built a platform that enables discovery of yoga videos at scale. We use the Azure Cloud infrastructure to host the asynchronous pipeline. 
+    This backend is used to run summarization for videos. The pipeline is built for high scalability and modularity. 
+    We host our inference models as endpoints. The pipeline consists of multiple stages:
+
+    Segments videos into images
+    Extract skeletons from each image
+    Identify yoga pose on skeletons
+    Ingest yoga pose results to Azure Data Explorer
+    Perform multi-modal summarization and update search index
+
+
     <section class="inner-page">
       <div class="container">
         <h2>DAATE MVP (v.01): </h2>
-        <p>For the MVP the DAATE team leveraged Microsoft Azure as the foundation. The Florida Depertment of Corrections (DOC) data was ingested to a blob storage which was then modified through databricks to be stored in a Azure SQL DB table. </p>
+        <p>The DAATE MVP leverages Microsoft Azure Cloud infrstructure to host the synchronous pipeline and data ingestion and processing. The Florida Depertment of Corrections (DOC) data was ingested to a blob storage 
+          which was then modified through databricks to be stored in a Azure SQL DB table. This backend is used for processing the DOC data through various modelling techniques and is built for high scalability and modularity.
+          The data and modelling results are accessed by Tableau and served on this site via GitHub pages.  The pipeline and process consists of multiple stages:
+          <li> Ingest DOC data to Azure Blob Storage</li>
+          <li> Leverage Databricks to move to Azure SQL DB table</li>
+          <li> Elastic search, Azure ML and Python to perform EDA and create MVP Azure SQL table</li>
+          <li> Perform multi-modelling in Azure ML and Python updating the MPV Azure SQL table</li>
+          <li> Tableau is used to access MVP Azure SQL table to create dashboard</li>
+          <li> GitHub pages are used to serve up the DAATE website</li>
+        </p>
         <p></p>
         <h2>DAATE Future state (v.02): </h2>
-        <p>The team sees many different areas that could be explored beyond the MVP including, introducing additional datasets and datapoints from Florida, extending to other United States cities, inroducing the notion of natural language processing of court transcripts, and image processing of mug shots </p>
+        <p>The team sees many different areas that could be explored beyond the MVP in v.02 including: </p>
+          <li> Process DOC data from 2016-current year</li>
+          <li> Invetigate the use of social feeds as datasources</li>
+          <li> Extend to other United States cities</li>
+          <li> Image processing of mug shots to determine if there are other factors that influence sentencing</li>
+          <li> Introduce natural lanaguage processing (NLP) of court transcripts</li>
+          <li> Partner with an organization that focuses on equity in the criminal justice system.</li>
       </div>
             
     </section>
