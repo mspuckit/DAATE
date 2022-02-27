@@ -32,22 +32,7 @@
 
 <body>
 
-  <!-- ======= Top Bar ======= COMMENTED OUT 
-  <section id="topbar" class="d-flex align-items-center">
-    <div class="container d-flex justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+1 5589 55488 55</span></i>
-      </div>
-      <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
-      </div>
-    </div>
-  </section>
-  -->
+  
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
@@ -216,8 +201,16 @@
         <h2>DAATE MVP Data: </h2>
         <p>For the MVP the DAATE team leveraged data from the Florida Depertment of Corrections (DOC) from 2004-2016. The data contained 1.3 million rows and 290 columns. Because no data dictionary was available the team relied heavily on our subject matter experts.  </p>
         <p></p>
-        <h2>DAATE MVP EDA: </h2>
-        <p>Describe the EDA process </p>
+        <h2>DAATE EDA:</h2>
+        <h3>Removing invalid/incorrect data </h3>
+        <p>During the EDA process the team idenfitied some invalid and incorrect data that was removed from the data.  This includes: </p>
+          <li> Life Sentences: The life sentences created significant outliers in the sentencing outcome variable and showed signs of incorrect data. This data represented only 0.26% of the raw data and because of the small amount was removed.</li>
+          <li> 0 Total Points: There were 3 cases with 0 total points. We assumed this to be incorrect data and removed the 3 corresponding rows.</li>
+          <li> 44+ Points & No Prison/Jail Time: Cases with 44+ points usually receive a state prison sentence as a baseline. Manual checks indicated incorrect data and the data was removed.</li>
+        <h3>Removing outliers </h3>
+        <p>During the EDA process the team identified some outliers.  This includes: </p>    
+          <li> Total Points Outliers: Extreme values (thousands of points, max = 19,439) were identified and not feasible based on other data. We used the z-score method to identify and remove outliers (new max = 199.6)</li>
+          <li> Sentence Time Outliers: Handle potentially incorrect data (e.g. very small points but extremely high sentence time). The team decided to bucket the total points and removed sentence time outliers (via z-score method) within each bucket</li>
       </div>
             
     </section>
