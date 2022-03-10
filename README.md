@@ -57,7 +57,7 @@ MODEL ANALYSIS
 |[`Notebooks/aligning_and_balancing_multiple_datasets`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres1.pdf)|Code file to balance datasets.|
 DELIVERABLES
 |[`deliverables/DAATE_Pres1.PDF`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres1.pdf)| PDF of presentation 1.|
-|[`deliverables/DAATE_Pres2.PDF`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres1.pdf)| PDF of presentation 2.|
+|[`deliverables/DAATE_Pres2.PDF`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Presentation2_Final.pdf)| PDF of presentation 2.|
 |[`deliverables/DAATE_Pres3.PDF`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres1.pdf)| PDF of presentation 3.|
 DATA
 |[`data/dev-v2.0.json/`](https://github.com/mspuckit/w266_FinalProject/blob/main/data/dev-v2.0.json)| Raw dev file from SQuAD 2.0|
