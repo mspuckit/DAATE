@@ -116,7 +116,7 @@
               <h3>Model information</h3>
               <ul>
                 <li><strong>Model Approaches</strong>: Predictive and Causal Modelling</li>
-                <li><strong>Counties Used</strong>: Clearwater, Tampa, Ft. Lauderdale</li>
+                <li><strong>Circuits/Counties Used</strong>: Clearwater, Tampa, Ft. Lauderdale</li>
                 <li><strong>Crime Types Used</strong>: Drugs, Robbery, Burglary, Drivers Licenses</li>
                 <li><strong>List of judges used</strong>: <a href="#">www.example.com</a></li>
               </ul>
@@ -140,18 +140,48 @@
         </br>
           <h2>Predictive Modelling: </h2>
         </br>
-          <p>For predictive modelling we applied the following  </p>
-            <li><strong><span>TBD:</span></strong> TBD</li>
-            <li> <strong><span>TBD:</span></strong> TBD</li>
-            <li> <strong><span>TBD:</span></strong> TBD.</li>
+          <p>For predictive modelling we leveraged pycaret to evaluate 19 algorithms.  </p>
+            <li><strong><span>Algorithm:</span></strong> lightgbm  </li>
+            <li><strong><span>Segment:</span></strong> Clearwater, Tampa, Ft. Lauderdale with top 3 crime types: TBD</li>
+            <li> <strong><span>Assumptions:</span></strong> No ommited variables</li>
+            <li> <strong><span>Trade-offs:</span></strong> Model chosen with slight loss accuracy for faster training times</li>
+            <li> <strong><span>Challenges:</span></strong> Dataset was smaller for the 2nd and 3rd level crime types</li>
           </br>
           </br>
           <h2>Causal Modelling:</h2>
           </br>
-          <p>For cuaual modelling we applied the following  </p>
-            <li><strong><span>TBD:</span></strong> TBD</li>
-            <li> <strong><span>TBD:</span></strong> TBD</li>
-            <li> <strong><span>TBD:</span></strong> TBD.</li>
+          <p>For cuaual modelling we focussed on robustness and applicability through a Quasi-experimental design: synthetic control, instrumental varibles and matching methods.   </p>
+          <li><strong><span>Approach:</span></strong>  Clustering based matching (unsupervised) </li>
+          <ul>
+            <li>Subitem 1</li>
+          </ul>
+          <li><strong><span>Evaluation:</span></strong>
+            <ul>
+              <li>Data Driven Method:
+              <ul>
+                <li>Elbow method</li>
+                <li>Empiral method</li>
+                <li>Intra cluster variance</li>
+              </ul>
+              </li>
+              <li>Sensitivy Analysis</li>
+              <li>Confidence Interval and Significance test evaluation</li>
+            </ul>
+          </li>
+          <li> <strong><span>Assumptions:</span></strong>
+            <ul>
+              <li>Stable unit treatment value assumption (SUTVA): Treatment of one unit does not affect the potential outcome of other units</li>
+              <li>Ignorability: Treatment assignment is independent of the potential outcome</li>
+            </ul> 
+          </li>
+          <li> <strong><span>Trade-offs:</span></strong> 
+            <ul>
+              <li>Bias and Variance</li>
+              <li>Matching Explainability</li>
+              <li>Computation Efficiency</li>
+            </ul> 
+          </li>
+          <li> <strong><span>Challenges:</span></strong> TBD</li>
         </br>
             <h2>Notes: </h2>
           <p>TBD: </p>    
