@@ -131,7 +131,7 @@
       <section class="inner-page">
         
         <div class="container">
-          <h2>A Note on the Use of Judges in our Models</h2>
+          <h2>A Note on the Use of the judge feature in our Models</h2>
           <p>Due to direct feedback from our subject maater experts, the predictive and causal modelling approaches have been run with and without judge information for comparison reasons.</p>
           <p>We chose counties with enough judge information for our modelling purposes and noted that many of the judges names we misspelled, shortened or abbreviated.  We have applied "fuzzy" search logic to group these variations in judges names together.</p>
           <li><strong><span>Number of judges used:</span></strong> TBD</li>
@@ -150,11 +150,16 @@
           </br>
           <h2>Causal Modelling:</h2>
           </br>
-          <p>For cuaual modelling we focussed on robustness and applicability through a Quasi-experimental design: synthetic control, instrumental varibles and matching methods.   </p>
-          <li><strong><span>Approach:</span></strong>  Clustering based matching (unsupervised) </li>
-          <ul>
-            <li>Subitem 1</li>
-          </ul>
+          <p>For causal modelling we focussed on robustness and applicability through a Quasi-experimental design: synthetic control, instrumental varibles and matching methods.   </p>
+          <li><strong><span>Approach:</span></strong> 
+            <ul>
+              <li>Clustering based matching (unsupervised):
+              <ul>
+                <li>Generate data clusters based on feature proximity</li>
+                <li>Distance based clusters require Explainability for categorical features</li>
+                <li>Less situational</li>
+              </ul> 
+            </li>
           <li><strong><span>Evaluation:</span></strong>
             <ul>
               <li>Data Driven Method:
