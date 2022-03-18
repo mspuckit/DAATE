@@ -191,18 +191,36 @@
           <h2>The Use of the Judge Feature in our Models</h2>
           <p>Due to direct feedback from our subject maater experts, the predictive and causal modelling approaches have been run with and without judge information for comparison reasons.</p>
           <p>We chose counties with enough judge information for our modelling purposes and noted that many of the judges names we misspelled, shortened or abbreviated.  We have applied "fuzzy" search logic to group these variations in judges names together.</p>
-          <li><strong><span>Number of judges used:</span></strong> TBD</li>
+          <li><strong><span>Number of judges used:</span></strong> 3 (Andrews, Quesada, Peters)</li>
           <li> <strong><span>Link to judge reference:</span></strong> <a href="tryit_caselist.html">Florida Sentencing Details by Judge</a></li>
-          <li> <strong><span>TBD:</span></strong> TBD.</li>
+          <li> <strong><span>Challenges:</span></strong> We believe that OCR (or similar) was used to scan court documents as the team encountered several variations of judges names. Fuzzy logic (levenstein distance) was used to collate the judge names and sanity checks were made to ensure accuracy.</li>
         </br>
           <h2>Predictive Modelling: </h2>
         </br>
-          <p>For predictive modelling we leveraged pycaret to evaluate 19 algorithms.</p>
-            <li><strong><span>Algorithm Used:</span></strong> lightgbm  </li>
-            <li><strong><span>Segment:</span></strong> Clearwater, Tampa, Ft. Lauderdale with top 3 crime types: TBD</li>
-            <li> <strong><span>Assumptions:</span></strong> No ommited variables</li>
-            <li> <strong><span>Trade-offs:</span></strong> Model chosen with slight loss accuracy for faster training times</li>
-            <li> <strong><span>Challenges:</span></strong> Dataset was smaller for the 2nd and 3rd level crime types TBD why is this a challenge???</li>
+          <p>For predictive modelling we leveraged pycaret to evaluate 19 algorithms. Of the 19 algorithms, the best models were selected by R2 score. Two sets of predictions on sentencing days were created with and without judge name as a variable.</p>
+          <h3>All predictions:</h3>
+              <li><strong><span>Predicting:</span></strong> Sentencing Days</li>
+              <li><strong><span>Crime Type:</span></strong> Drugs, Robbery and Traffic Control</li>
+              <li><strong><span>Age:</span></strong> 20-86 years of age </li>
+              <li><strong><span>Gender:</span></strong> M/F </li>
+              <li><strong><span>Race:</span></strong> Black/White </li> 
+          <h3>Without judge name predictions: </h3>
+            <li><strong><span>Algorithms Used:</span></strong> lightgbm, ridge regression  </li>
+            <li><strong><span>Variables Used:</span></strong> </li>
+            <ul>
+              <li><strong><span>Circuit:</span></strong> Clearwater, Tampa, Ft. Lauderdale</li>
+              
+          </ul>
+            <h3>With judge name predictions: </h3>
+            <li><strong><span>Algorithms Used:</span></strong> lightgbm, ridge regression  </li>
+            <li><strong><span>Variables Used:</span></strong> </li>
+            <ul>
+              <li><strong><span>Judge names:</span></strong> Andrews, Quesada, Peters</li>
+          </ul>
+              
+            <li> <strong><span>Assumptions:</span></strong>No ommited variables</li>
+            <li> <strong><span>Trade-offs:</span></strong>Model chosen with slight loss accuracy for faster training times</li>
+            <li> <strong><span>Challenges:</span></strong>Dataset was smaller for the 2nd and 3rd level crime types causing some anomalous predictions</li>
           </br>
           </br>
           <h2>Causal Modelling:</h2>
