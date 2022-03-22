@@ -125,7 +125,7 @@
             <div class="portfolio-info">
               <h3>Model information</h3>
               <ul>
-                <li><strong><span>Model Approaches:</strong></span><a href="https://github.com/mspuckit/DAATE/blob/main/Models/Model_packaged.ipynb">Predictive Model Notebook,</a> <a href="https://github.com/mspuckit/DAATE/blob/main/Models/Model_packaged.ipynb">Causal Model Notebook,</a>  <a href="https://github.com/mspuckit/DAATE/blob/main/Models/Model_packaged.ipynb"> Bias and Disparity Dection Engine (BDDE) Notebook</a></li>
+                <li><strong><span>Model Approaches:</strong></span><a href="https://github.com/mspuckit/DAATE/blob/main/Models/Model_packaged.ipynb">Predictive Model Notebook,</a> <a href="https://github.com/mspuckit/DAATE/blob/main/Models/Model_packaged.ipynb">Causal Model Notebook,</a>  <a href="https://github.com/mspuckit/DAATE/blob/main/Models/Model_packaged.ipynb"> Bias & Disparity Dection Engine (BDDE) Notebook</a></li>
                 <li><strong>Circuits/Counties Used</strong>: Clearwater, Tampa, Ft. Lauderdale, Cook County (BDDE only)</li>
                 <li><strong>Crime Types Used</strong>: Drugs, Robbery, Burglary, Drivers Licenses</li>
                 <li><strong>List of judges used</strong>: <a href="tryit_caselist.html">Florida Sentencing Details by Judge</a></li>
@@ -266,16 +266,17 @@
           </li>
           <li> <strong><span>Challenges:</span></strong> The method depends on enough data points for each cluster and may be hard to extend to scenarios with less data points to prove meaningful results</li>
         </br>
-        <h2>Bias and Disparity Detection Engine (BDDE):</h2>
+        <h2>Bias & Disparity Detection Engine (BDDE):</h2>
           </br>
           <p>The Bias and Disparity Detection Engine (BDDE) is a public solution created by a team at IBM for analysis of bias in Federal US Sentencing Datasets. The teams goal is to isolate disparity in sentencing at the Federal level between Black vs. White defendants. The BDDE team accomplishes this by comparing the average months of sentencing against a historical profile of actual sentences for similar charges by racial demographics.    </p>
           <li><strong><span>Approach:</span></strong> 
+            <li><strong><span>Running BDDE:</span></strong> For DAATE, a Bias and Disparity Detection Engine inference Docker container was created following the guidlines on the <a href="https://github.com/Call-for-Code-for-Racial-Justice/bias-detection-engine">Bias & Disparity Detection Engine</a> git hub page.</li>
             <ul>
-              <li><strong><span>Segments:</span></strong>
+              <li><strong><span>Data:</span></strong> A CSV was created from the Florida DOC dataset that was sent to the BDDE Inference in the created Docker container. This data includes:
                 <ul>
-                  <li><strong><span>Circuits:</span></strong> TBD  </li>
                   <li><strong><span>Counties:</span></strong> Cook </li>
                   <li><strong><span>Crime Type:</span></strong> TBD  </li>
+                  <li><strong><span>Amount XXX:</span></strong> TBD  </li>
                 </ul> 
               </li>
           <li><strong><span>Evaluation:</span></strong>
@@ -290,7 +291,7 @@
           </li>
           <li> <strong><span>Assumptions:</span></strong>
             <ul>
-              <li>TBD something about amount of drugs ?? </li>
+              <li>We have assumed a level of XXX for XXX </li>
               <li>TBD</li>
             </ul> 
           </li>
