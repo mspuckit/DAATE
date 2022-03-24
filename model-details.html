@@ -214,62 +214,56 @@
           <li> <strong><span>Link to judge reference:</span></strong> <a href="tryit_caselist.html">Florida Sentencing Details by Judge</a></li>
           <li> <strong><span>Challenges:</span></strong> We believe that OCR (or similar) was used to scan court documents as the team encountered several variations of judges names. Fuzzy logic (levenstein distance) was used to collate the judge names and sanity checks were made to ensure accuracy.</li>
         </br>
+
+        <h2>The Use of Segments for the Predictive and Causal Models</h2>
+        <li>To narrow the scope for our MVP we segmented three circuits and three crime types listed below
+          <ul>
+            <li><strong><span>Circuits:</span></strong> CIRCUIT 06 - CLEARWATER, CIRCUIT 11 - MIAMI, CIRCUIT 17 - FT. LAUDERDALE  </li>
+            <li><strong><span>Crime Type:</span></strong> Drugs, Robbery and Traffic Control</li>
+          </ul> 
+        </li>
+      </br>
+
           <h2>Predictive Modelling: </h2>
         </br>
           <p>For predictive modelling we leveraged pycaret to evaluate 19 algorithms. Of the 19 algorithms, the best models were selected by R2 score. Two sets of predictions on sentencing days were created with and without judge name as a variable.</p>
-          
-          <h3>All predictions:</h3>
-              <li><strong><span>Predicting:</span></strong> Sentencing Days</li>
-              <li><strong><span>Segments:</span></strong>
-                <ul>
-                  <li><strong><span>Circuits:</span></strong> CIRCUIT 06 - CLEARWATER, CIRCUIT 11 - MIAMI, CIRCUIT 17 - FT. LAUDERDALE  </li>
-                  <li><strong><span>Crime Type:</span></strong> Drugs, Robbery and Traffic Control</li>
-                </ul> 
-              </li>
-              <li><strong><span>Algorithms Used:</span></strong> lightgbm, ridge regression  </li>
-              <li><strong><span>Variables Used:</span></strong> 
-                <ul>
-                <li><strong><span>Age:</span></strong> 20-86 years of age </li>
-                <li><strong><span>Gender:</span></strong> M/F </li>
-                <li><strong><span>Race:</span></strong> Black/White </li> 
-                <li><strong><span> Judge names (only for models with judge name information):</span></strong> Andrews, Quesada, Peters</li>
-                </ul>
-              </li>
-              <li> <strong><span>Assumptions:</span></strong> No omited variables</li>
-              <li> <strong><span>Trade-offs:</span></strong> Model chosen with slight loss accuracy for faster training times</li>
-              <li> <strong><span>Challenges:</span></strong> Dataset was smaller for the 2nd and 3rd level crime types causing some anomalous predictions</li>
+          </br>
+            <li><strong><span>Algorithms Used:</span></strong> lightgbm, ridge regression  </li>
+            <li><strong><span>Model Inputs:</span></strong> 
+              <ul>
+              <li><strong><span>Age:</span></strong> 20-86 years of age </li>
+              <li><strong><span>Gender:</span></strong> M/F </li>
+              <li><strong><span>Race:</span></strong> Black/White </li> 
+              <li><strong><span> Judge names (only for models with judge name information):</span></strong> Andrews, Quesada, Peters</li>
+              </ul>
+            </li>
+            <li><strong><span>Model Output:</span></strong>Predicted Sentencing in Days  </li>
+            </br>  
+            <li> <strong><span>Assumptions:</span></strong> No omited variables</li>
+            <li> <strong><span>Trade-offs:</span></strong> Model chosen with slight loss accuracy for faster training times</li>
+            <li> <strong><span>Challenges:</span></strong> Dataset was smaller for the 2nd and 3rd level crime types causing some anomalous predictions</li>
           </br>
           </br>
           <h2>Causal Modelling:</h2>
           </br>
           <p>For causal modelling we focused on robustness and applicability through a Quasi-experimental design using matching methods.   </p>
-          <li><strong><span>Approach:</span></strong> 
+          <li><strong><span>Approach:</span></strong> Clustering based matching (unsupervised)
+            <ul>              
+              <li>Generate data clusters based on feature proximity determined through k-means and cosine similarity on gender, age and total sentencing points</li>
+              <li>Clusters are generated using distance based clustering (Good explainability)</li>
+              <li>Clustering based matching is less situational than many other matching methods</li>
+            </ul> 
+          </li>
+          <li><strong><span>Model Inputs:</span></strong> 
             <ul>
-              <li><strong><span>Segments:</span></strong>
-                <ul>
-                  <li><strong><span>Circuits:</span></strong> CIRCUIT 06 - CLEARWATER, CIRCUIT 11 - MIAMI, CIRCUIT 17 - FT. LAUDERDALE.  </li>
-                  <li><strong><span>Judges:</span></strong> Andrews, Quesada, Peters  </li>
-                </ul> 
-              </li>
-              <li><strong><span>Clustering based matching (unsupervised)</span></strong>:
-              <ul>
-                <li>Generate data clusters based on feature proximity determined through k-means and cosine similarity on gender, age and total sentencing points</li>
-                <li>Clusters are generated using distance based clustering (Good explainability)</li>
-                <li>Clustering based matching is less situational than many other matching methods</li>
-              </ul> 
-            </li>
-          <li><strong><span>Evaluation:</span></strong>
-            <ul>
-              <li><strong><span>Clustering:</span></strong>
-              <ul>
-                <li>Elbow method</li>
-                <li>Intra cluster variance</li>
-              </ul>
-              </li>
-              <li>Sensitivity Analysis</li>
-              <li>Confidence Interval and Significance test evaluation</li>
+              <li><strong><span>TBD:</span></strong> TBD </li>
+              <li><strong><span>Gender:</span></strong> M/F </li>
+              <li><strong><span>Race:</span></strong> Black/White </li> 
+              <li><strong><span> Judge names (only for models with judge name information):</span></strong> Andrews, Quesada, Peters</li>
             </ul>
           </li>
+          <li><strong><span>Model Output:</span></strong>TBD </li>
+          </br>
           <li> <strong><span>Assumptions:</span></strong>
             <ul>
               <li>Stable unit treatment value assumption (SUTVA): Treatment of one unit does not affect the potential outcome of other units</li>
@@ -291,23 +285,16 @@
           <li><strong><span>Approach:</span></strong> 
             <li><strong><span>Running BDDE:</span></strong> For DAATE, a Bias and Disparity Detection Engine inference Docker container was created following the guidlines on the <a href="https://github.com/Call-for-Code-for-Racial-Justice/bias-detection-engine">Bias & Disparity Detection Engine</a> git hub page.</li>
             <ul>
-              <li><strong><span>Data:</span></strong> A CSV was created from the Florida DOC dataset that was sent to the BDDE Inference in the created Docker container. This data includes:
+              <li><strong><span>Model Inputs:</span></strong> A CSV was created from the Florida DOC dataset that was sent to the BDDE Inference in the created Docker container. This data includes:
                 <ul>
                   <li><strong><span>Counties:</span></strong> Cook </li>
                   <li><strong><span>Crime Type:</span></strong> TBD  </li>
                   <li><strong><span>Amount XXX:</span></strong> TBD  </li>
                 </ul> 
               </li>
-          <li><strong><span>Evaluation:</span></strong>
-            <ul>
-              <li><strong><span>TBD:</span></strong>
-              <ul>
-                <li>TBD</li>
-                <li>TBD</li>
-              </ul>
-              </li>
-            </ul>
-          </li>
+              
+            <li><strong><span>Model Output:</span></strong>TBD </li>
+          
           <li> <strong><span>Assumptions:</span></strong>
             <ul>
               <li>We have assumed a level of XXX for XXX </li>
