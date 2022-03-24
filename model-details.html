@@ -225,7 +225,6 @@
       </br>
 
           <h3>Predictive Modelling: </h3>
-        </br>
           <p>For predictive modelling we leveraged pycaret to evaluate 19 algorithms. Of the 19 algorithms, the best models were selected by R2 score. Two sets of predictions on sentencing days were created with and without judge name as a variable.</p>
           </br>
             <li><strong><span>Algorithms Used:</span></strong> lightgbm, ridge regression  </li>
@@ -235,17 +234,14 @@
               <li><strong><span>Gender:</span></strong> M/F </li>
               <li><strong><span>Race:</span></strong> Black/White </li> 
               <li><strong><span> Judge names (only for models with judge name information):</span></strong> Andrews, Quesada, Peters</li>
-              </ul>
-            </li>
-            <li><strong><span>Model Output:</span></strong>Predicted Sentencing in Days  </li>
-            </br>  
+              </ul></li>
+            <li><strong><span>Model Output:</span></strong>Predicted Sentencing in Days</li>  
             <li> <strong><span>Assumptions:</span></strong> No omited variables</li>
             <li> <strong><span>Trade-offs:</span></strong> Model chosen with slight loss accuracy for faster training times</li>
             <li> <strong><span>Challenges:</span></strong> Dataset was smaller for the 2nd and 3rd level crime types causing some anomalous predictions</li>
           </br>
           </br>
           <h3>Causal Modelling:</h3>
-          </br>
           <p>For causal modelling we focused on robustness and applicability through a Quasi-experimental design using matching methods.   </p>
           <li><strong><span>Approach:</span></strong> Clustering based matching (unsupervised)
             <ul>              
@@ -279,8 +275,8 @@
           </li>
           <li> <strong><span>Challenges:</span></strong> The method depends on enough data points for each cluster and may be hard to extend to scenarios with less data points to prove meaningful results</li>
         </br>
+      </br>
         <h3>Bias & Disparity Detection Engine (BDDE):</h3>
-          </br>
           <p>The Bias and Disparity Detection Engine (BDDE) is a public solution created by a team at IBM for analysis of bias in Federal US Sentencing Datasets. The teams goal is to isolate disparity in sentencing at the Federal level between Black vs. White defendants. The BDDE team accomplishes this by comparing the average months of sentencing against a historical profile of actual sentences for similar charges by racial demographics.    </p>
           <li><strong><span>Approach:</span></strong> 
             <li><strong><span>Running BDDE:</span></strong> For DAATE, a Bias and Disparity Detection Engine inference Docker container was created following the guidlines on the <a href="https://github.com/Call-for-Code-for-Racial-Justice/bias-detection-engine">Bias & Disparity Detection Engine</a> git hub page.</li>
