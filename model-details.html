@@ -207,7 +207,7 @@
       <section class="inner-page">
         
         <div class="container">
-          <h2>The Use of the Judge Feature in our Predictive and Causal Models</h2>
+          <h3>The Use of the Judge Feature in our Predictive and Causal Models</h3>
           <p>Due to direct feedback from our subject matter experts, the predictive and causal modelling approaches have been run with and without judge information for comparison reasons.</p>
           <p>We chose counties with enough judge information for our modelling purposes and noted that many of the judges names we misspelled, shortened or abbreviated.  We have applied "fuzzy" search logic to group these variations in judges names together.</p>
           <li><strong><span>Number of judges used:</span></strong> 3 (Andrews, Quesada, Peters)</li>
@@ -215,16 +215,16 @@
           <li> <strong><span>Challenges:</span></strong> We believe that OCR (or similar) was used to scan court documents as the team encountered several variations of judges names. Fuzzy logic (levenstein distance) was used to collate the judge names and sanity checks were made to ensure accuracy.</li>
         </br>
 
-        <h2>The Use of Segments for the Predictive and Causal Models</h2>
-        <li>To narrow the scope for our MVP we segmented three circuits and three crime types listed below
+        <h3>The Use of Segments for the Predictive and Causal Models</h3>
+        <p>To narrow the scope for our MVP we segmented the three circuits and three crime types listed below
           <ul>
             <li><strong><span>Circuits:</span></strong> CIRCUIT 06 - CLEARWATER, CIRCUIT 11 - MIAMI, CIRCUIT 17 - FT. LAUDERDALE  </li>
             <li><strong><span>Crime Type:</span></strong> Drugs, Robbery and Traffic Control</li>
           </ul> 
-        </li>
+        </p>
       </br>
 
-          <h2>Predictive Modelling: </h2>
+          <h3>Predictive Modelling: </h3>
         </br>
           <p>For predictive modelling we leveraged pycaret to evaluate 19 algorithms. Of the 19 algorithms, the best models were selected by R2 score. Two sets of predictions on sentencing days were created with and without judge name as a variable.</p>
           </br>
@@ -244,7 +244,7 @@
             <li> <strong><span>Challenges:</span></strong> Dataset was smaller for the 2nd and 3rd level crime types causing some anomalous predictions</li>
           </br>
           </br>
-          <h2>Causal Modelling:</h2>
+          <h3>Causal Modelling:</h3>
           </br>
           <p>For causal modelling we focused on robustness and applicability through a Quasi-experimental design using matching methods.   </p>
           <li><strong><span>Approach:</span></strong> Clustering based matching (unsupervised)
@@ -279,7 +279,7 @@
           </li>
           <li> <strong><span>Challenges:</span></strong> The method depends on enough data points for each cluster and may be hard to extend to scenarios with less data points to prove meaningful results</li>
         </br>
-        <h2>Bias & Disparity Detection Engine (BDDE):</h2>
+        <h3>Bias & Disparity Detection Engine (BDDE):</h3>
           </br>
           <p>The Bias and Disparity Detection Engine (BDDE) is a public solution created by a team at IBM for analysis of bias in Federal US Sentencing Datasets. The teams goal is to isolate disparity in sentencing at the Federal level between Black vs. White defendants. The BDDE team accomplishes this by comparing the average months of sentencing against a historical profile of actual sentences for similar charges by racial demographics.    </p>
           <li><strong><span>Approach:</span></strong> 
