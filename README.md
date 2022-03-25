@@ -35,10 +35,11 @@ Below is a list of directories found in this repository along with a brief descr
 
 |Directory | Description |
 |:---------|:------------|
-|[`Models`](https://github.com/mspuckit/DAATE/tree/main/Models)|Contains all of the notebooks used in this research|
+|[`MODELS`](https://github.com/mspuckit/DAATE/tree/main/Models)|Contains all of the notebooks for the various models|
 |[`DELIVERABLES`](https://github.com/mspuckit/DAATE/tree/main/Deliverables)|Contains the final deliverables for this project|
 |[`DATA`](https://github.com/mspuckit/DAATE/tree/main/data/sentencing)|Scrubbed data used|
-|[`Assets`](https://github.com/mspuckit/DAATE/tree/main/assets)| Website specific files|
+|[`EDA & DATA CLEANSING`](https://github.com/mspuckit/DAATE/tree/main/EDA%20%26%20Data%20Cleansing)|Contains notebooks for EDA & data cleansing|
+|[`ASSETS`](https://github.com/mspuckit/DAATE/tree/main/assets)| Website specific files|
 
 Below is a list of notable files found in this repository along with a brief description.
 
@@ -62,6 +63,8 @@ DELIVERABLES
 DATA
 |[`data/dev-v2.0.json/`](https://github.com/mspuckit/w266_FinalProject/blob/main/data/dev-v2.0.json)| Raw dev file from SQuAD 2.0|
 |[`data/train-v2.0.json`](https://github.com/mspuckit/w266_FinalProject/blob/main/data/train-v2.0.json)| Raw train file form SQuAD 2.0|
+EDA & DATA CLEANSING
+|[`Data_Cleaning_Outliers_ZScore.ipynb`](https://github.com/mspuckit/DAATE/blob/main/EDA%20%26%20Data%20Cleansing/Data_Cleaning_Outliers_ZScore.ipynb)| Data cleansing process & removing outliers|
 
 
 
