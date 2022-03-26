@@ -18,12 +18,15 @@ There have been recent stories surrounding the challenges within the criminal ju
 - The team at American Equity and Justice Group whose goal is to provide transparency into the WA criminal justice system
 
 
-
-
 ### Introduction
 
+Our MVP goal is to provide greater transparency into sentencing of Black and White Americans in the United States (US) criminal justice system, through simple yet impactful analytics beginning first with the Florida Department of Corrections (DOC). In addition to analytics, the DAATE MVP provides statistical guidelines for evidence of sentencing bias through exploring causality, as well as providing easily interpretable, statistical model-based sentence time predictions. 
 
+DAATE is intended to be an advisory tool for defense attorneys to gain additional insight about potential inequity in sentencing, and to aid in the attorneys case preparation to represent and to seek fair and equal treatment for their client.
 
+### Mission
+
+To empower legal professionals to realize fairness and equity for their clients by providing transparency into sentencing in the US criminal justice system using data science techniques.
 
 ### Our Results
 
@@ -51,8 +54,14 @@ WEB SITE
 |[`arch-details.html`](https://github.com/mspuckit/DAATE/blob/main/arch-details.html)|Architecture details page for DAATE.|
 |[`data-details.html`](https://github.com/mspuckit/DAATE/blob/main/data-details.html)|Data details page for DAATE.|
 |[`model-details.html`](https://github.com/mspuckit/DAATE/blob/main/model-details.html)|Model details page for DAATE.|
+|[`results-details.html`](https://github.com/mspuckit/DAATE/blob/main/results-details.html)|Results details page for DAATE.|
+|[`whatsnext-details.html`](https://github.com/mspuckit/DAATE/blob/main/whatsnext-details.html)|Next Steps details page for DAATE.|
 |[`terms.html`](https://github.com/mspuckit/DAATE/blob/main/terms.html)|Terms of Use page for DAATE.|
-|[`tryit_one.html`](https://github.com/mspuckit/DAATE/blob/main/tryit_one.html)|Try It for DAATE.|
+|[`privacy.html`](https://github.com/mspuckit/DAATE/blob/main/privacy.html)|Privacy Policy for DAATE.|
+|[`tryit_bdde.html`](https://github.com/mspuckit/DAATE/blob/main/tryit_bdde.html)|BDDE Dashboard results for DAATE.|
+|[`tryit_caselist.html`](https://github.com/mspuckit/DAATE/blob/main/tryit_caselist.html)|Judge case list for DAATE.|
+|[`tryit_modelresults.html`](https://github.com/mspuckit/DAATE/blob/main/tryit_modelresults.html)|Model results for DAATE.|
+|[`tryit_one.html`](https://github.com/mspuckit/DAATE/blob/main/tryit_one.html)|Analytic results for DAATE.|
 MODEL ANALYSIS
 |[`Notebooks/ModelAnalysis.ipynb`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres1.pdf)|Analysis of dataset|
 |[`Notebooks/aligning_and_balancing_multiple_datasets`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres1.pdf)|Code file to balance datasets.|
@@ -61,8 +70,8 @@ DELIVERABLES
 |[`deliverables/DAATE_Pres2.PDF`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres2.pdf)| PDF of presentation 2.|
 |[`deliverables/DAATE_Pres3.PDF`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres1.pdf)| PDF of presentation 3.|
 DATA
-|[`data/dev-v2.0.json/`](https://github.com/mspuckit/w266_FinalProject/blob/main/data/dev-v2.0.json)| Raw dev file from SQuAD 2.0|
-|[`data/train-v2.0.json`](https://github.com/mspuckit/w266_FinalProject/blob/main/data/train-v2.0.json)| Raw train file form SQuAD 2.0|
+|[`data/dev-v2.0.json/`](https://github.com/mspuckit/w266_FinalProject/blob/main/data/dev-v2.0.json)| TBD|
+|[`data/train-v2.0.json`](https://github.com/mspuckit/w266_FinalProject/blob/main/data/train-v2.0.json)| TBD|
 EDA & DATA CLEANSING
 |[`Data_Cleaning_Outliers_ZScore.ipynb`](https://github.com/mspuckit/DAATE/blob/main/EDA%20%26%20Data%20Cleansing/Data_Cleaning_Outliers_ZScore.ipynb)| Data cleansing process & removing outliers|
 
