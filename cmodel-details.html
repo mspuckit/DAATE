@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Results Details - DAATE</title>
+  <title>Model Details - DAATE</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -50,7 +50,7 @@
               <li><a href="data-details.html">Data</a></li>
               <li><a href="arch-details.html">Architecture</a></li>
               <li><a href="model-details.html">Models</a></li>
-              <li><a href="results-details.html">Results</a></li>
+              <li><a href="cmodel-details.html">Causal Model</a></li>
               <li><a href="whatsnext-details.html">Next Steps</a></li>
             </ul>
           </li>
@@ -61,7 +61,7 @@
               <li><a href="tryit_caselist.html">Florida Sentencing Details by Judge</a></li>
               <li><a href="tryit_bdde.html">Florida Sentencing BDDE Results</a></li>
             </ul>
-            </li>
+          </li>
           <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="terms.html">Terms of Use</a></li>
@@ -87,11 +87,11 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Results Details</h2>
+          <h2>Causal Model Details</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#approach">Approach</a></li>
-            <li>Results Details</li>
+            <li>Causal Model Details</li>
           </ol>
         </div>
 
@@ -107,37 +107,56 @@
         <div class="row gy-4">
 
           <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
+            <div class="portfolio-details-slider swiper" >
               <div class="swiper-wrapper align-items-center">
-
+                
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/causaul_eval.jpg" alt="">
-                  <div class="portfolio-info">
-                    <a href="assets/img/portfolio/causaul_eval.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DAATE Causal Model Evaluation"><i class="bx bx-plus"></i>Zoom In</a>
+                  <div class="portfolio-item">
+                    <img src="assets/img/portfolio/causalmod.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <a href="assets/img/portfolio/causalmod.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DAATE Causal Model Architecture"><i class="bx bx-plus"></i>Zoom In</a>
+                    </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/modelhyp.jpg" alt="">
+                  <div class="portfolio-item">
+                    <img src="assets/img/portfolio/causal_approach.jpg" class="img-fluid" alt="">
+                    <div class="portfolio-info">
+                      <a href="assets/img/portfolio/causal_approach.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DAATE Causal Model Approach"><i class="bx bx-plus"></i>Zoom In</a>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                  <img src="assets/img/portfolio/causal_eval.jpg" alt="">
+                  <div class="portfolio-info">
+                    <a href="assets/img/portfolio/causal_eval.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DAATE Causal Model Evaluation"><i class="bx bx-plus"></i>Zoom In</a>
+                  </div>
                 </div>
-
               </div>
+
+              <div class="swiper-slide" >
+                <img src="assets/img/portfolio/causal_results.jpg" alt="">
+                <div class="portfolio-info">
+                  <a href="assets/img/portfolio/causal_results.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DAATE Causal Model Results"><i class="bx bx-plus"></i>Zoom In</a>
+                </div>
+              </div>
+
               <div class="swiper-pagination"></div>
+
             </div>
           </div>
-
+        
+      
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Results information</h3>
+              <h3>Causal Model information</h3>
               <ul>
-                <li><strong>Approaches</strong>: Predictive, Causal Modelling and Bias & Disparity Detection Engine</li>
-                <li><strong>Null Hypothesis</strong>: TBD</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong><span>Model Approach:</strong></span><a href="https://github.com/mspuckit/DAATE/blob/main/Models/Model_packaged.ipynb">Causal Model Notebook</a></li>
+                <li><strong>Circuits Used</strong>: CIRCUIT 06 - CLEARWATER, CIRCUIT 11 - MIAMI, CIRCUIT 17 - FT. LAUDERDALE</li>
+                <li><strong>Crime Types Used</strong>: Drugs, Robbery, Burglary, Drivers Licenses</li>
+                <li><strong>List of judges used</strong>: <a href="tryit_caselist.html">Florida Sentencing Details by Judge</a></li>
               </ul>
             </div>
             
@@ -147,8 +166,72 @@
 
       </div>
 
+
+
+      <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <!-- <i class="bi bi-emoji-smile"></i> -->
+              <i class="bi bi-info-lg"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Datasets Used</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <!-- <i class="bi bi-journal-richtext"></i> -->
+              <i class="bi bi-calendar-range"></i>
+              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Number of Years in Dataset</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <!-- <i class="bi bi-headset"></i> -->
+              <i class="bi bi-building"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Data Science Techniques Applied</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Subject Matter Experts Involved</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
       <section class="inner-page">
+        
         <div class="container">
+          <h3>The Use of the Judge Feature in our Predictive and Causal Models</h3>
+          <p>Due to direct feedback from our subject matter experts, the predictive and causal modelling approaches have been run with and without judge information for comparison reasons.</p>
+          <p>We chose counties with enough judge information for our modelling purposes and noted that many of the judges names we misspelled, shortened or abbreviated.  We have applied "fuzzy" search logic to group these variations in judges names together.</p>
+          <li><strong><span>Number of judges used:</span></strong> 3 (Andrews, Quesada, Peters)</li>
+          <li> <strong><span>Link to judge reference:</span></strong> <a href="tryit_caselist.html">Florida Sentencing Details by Judge</a></li>
+          <li> <strong><span>Challenges:</span></strong> We believe that OCR (or similar) was used to scan court documents as the team encountered several variations of judges names. Fuzzy logic (levenstein distance) was used to collate the judge names and sanity checks were made to ensure accuracy.</li>
+        </br>
+
+        <h3>The Use of Segments for the Predictive and Causal Models</h3>
+        <p>To narrow the scope for our MVP we segmented the three circuits and three crime types listed below
+          <ul>
+            <li><strong><span>Circuits:</span></strong> CIRCUIT 06 - CLEARWATER, CIRCUIT 11 - MIAMI, CIRCUIT 17 - FT. LAUDERDALE  </li>
+            <li><strong><span>Crime Type:</span></strong> Drugs, Robbery and Traffic Control</li>
+          </ul> 
+        </p>
+      </br>
           <h3>Causal Modelling:</h3>
           <p>For causal modelling we focused on robustness and applicability through a Quasi-experimental design using matching methods.   </p>
           <li><strong><span>Approach:</span></strong> Clustering based matching (unsupervised)
@@ -172,8 +255,8 @@
             <ul>
               <li>Stable unit treatment value assumption (SUTVA): Treatment of one unit does not affect the potential outcome of other units</li>
               <li>Ignorability: Treatment assignment is independent of the potential outcome</li>
-            </ul> 
-          </li> 
+            </ul>
+          </li>
           <li><strong><span>Evaluation:</span></strong>
             <ul>
               <li><strong><span>Clustering:</span></strong>
@@ -185,20 +268,18 @@
               <li>Sensitivity Analysis</li>
               <li>Confidence Interval and Significance test evaluation</li>
             </ul>
-          </li>  
+          </li>   
           <li> <strong><span>Trade-offs:</span></strong> 
             <ul>
               <li>Bias and Variance</li>
               <li>Matching Explainability</li>
               <li>Computation Efficiency</li>
             </ul> 
-          </li></li>  
+          </li>  
           <li> <strong><span>Challenges:</span></strong> The method depends on enough data points for each cluster and may be hard to extend to scenarios with less data points to prove meaningful results</li>
         </br>
       </br>
-          </br>
-          </br>
-          
+        
         </div>
               
       </section>
