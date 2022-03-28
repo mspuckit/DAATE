@@ -65,6 +65,7 @@ WEB SITE
 MODEL ANALYSIS
 |[`Notebooks/ModelAnalysis.ipynb`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres1.pdf)|Analysis of dataset|
 |[`Notebooks/aligning_and_balancing_multiple_datasets`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres1.pdf)|Code file to balance datasets.|
+|[`Notebooks/Causal_finalize.ipynb`](https://github.com/mspuckit/DAATE/blob/main/Models/Causal_finalize.ipynb)|Causal Inference result generation|
 DELIVERABLES
 |[`deliverables/DAATE_Pres1.PDF`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres1.pdf)| PDF of presentation 1.|
 |[`deliverables/DAATE_Pres2.PDF`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres2.pdf)| PDF of presentation 2.|
