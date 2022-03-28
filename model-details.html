@@ -87,11 +87,11 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Model Details</h2>
+          <h2>Predictive Model Details</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#approach">Approach</a></li>
-            <li>Model Details</li>
+            <li>Predictive Model Details</li>
           </ol>
         </div>
 
@@ -113,32 +113,32 @@
                 <div class="swiper-slide" >
                   <img src="assets/img/portfolio/predmodel.jpg" alt="">
                   <div class="portfolio-info">
-                    <a href="assets/img/portfolio/predmodel.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DAATE Predictive Model Architecture"><i class="bx bx-plus"></i>Zoom In</a>
+                    <a href="assets/img/portfolio/predmodel.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Predictive Model Architecture"><i class="bx bx-plus"></i>Zoom In</a>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
                   <div class="portfolio-item">
-                    <img src="assets/img/portfolio/causalmod.jpg" class="img-fluid" alt="">
+                    <img src="assets/img/portfolio/pmodel_results.jpg" class="img-fluid" alt="">
                     <div class="portfolio-info">
-                      <a href="assets/img/portfolio/causalmod.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DAATE Causal Model Architecture"><i class="bx bx-plus"></i>Zoom In</a>
+                      <a href="assets/img/portfolio/pmodel_results.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Predictive Model Results"><i class="bx bx-plus"></i>Zoom In</a>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
                   <div class="portfolio-item">
-                    <img src="assets/img/portfolio/causaul_approach.jpg" class="img-fluid" alt="">
+                    <img src="assets/img/portfolio/bdde_model.jpg" class="img-fluid" alt="">
                     <div class="portfolio-info">
-                      <a href="assets/img/portfolio/causaul_approach.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DAATE Causal Model Approach"><i class="bx bx-plus"></i>Zoom In</a>
+                      <a href="assets/img/portfolio/bdde_model.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="BDDE Model Architecture"><i class="bx bx-plus"></i>Zoom In</a>
                     </div>
                   </div>
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/bdde_model.jpg" alt="">
+                  <img src="assets/img/portfolio/bdde_results.jpg" alt="">
                   <div class="portfolio-info">
-                    <a href="assets/img/portfolio/bdde_model.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DAATE BDDE Model Architecture"><i class="bx bx-plus"></i>Zoom In</a>
+                    <a href="assets/img/portfolio/bdde_results.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="BDDE Model Results"><i class="bx bx-plus"></i>Zoom In</a>
                   </div>
                 </div>
               </div>
@@ -153,7 +153,7 @@
             <div class="portfolio-info">
               <h3>Model information</h3>
               <ul>
-                <li><strong><span>Model Approaches:</strong></span><a href="https://github.com/mspuckit/DAATE/blob/main/Models/Model_packaged.ipynb">Predictive Model Notebook,</a> <a href="https://github.com/mspuckit/DAATE/blob/main/Models/Model_packaged.ipynb">Causal Model Notebook,</a>  <a href="https://github.com/mspuckit/DAATE/blob/main/Models/Model_packaged.ipynb"> Bias & Disparity Dection Engine (BDDE) Notebook</a></li>
+                <li><strong><span>Model Approaches:</strong></span><a href="https://github.com/mspuckit/DAATE/blob/main/Models/Model_packaged.ipynb">Predictive Model Notebook,</a> <a href="https://github.com/mspuckit/DAATE/blob/main/Models/Model_packaged.ipynb"> Bias & Disparity Dection Engine (BDDE) Notebook</a></li>
                 <li><strong>Circuits Used</strong>: CIRCUIT 06 - CLEARWATER, CIRCUIT 11 - MIAMI, CIRCUIT 17 - FT. LAUDERDALE</li>
                 <li><strong>Crime Types Used</strong>: Drugs, Robbery, Burglary, Drivers Licenses</li>
                 <li><strong>List of judges used</strong>: <a href="tryit_caselist.html">Florida Sentencing Details by Judge</a></li>
@@ -251,40 +251,7 @@
           </li>
           </br>
           </br>
-          <h3>Causal Modelling:</h3>
-          <p>For causal modelling we focused on robustness and applicability through a Quasi-experimental design using matching methods.   </p>
-          <li><strong><span>Approach:</span></strong> Clustering based matching (unsupervised)
-            <ul>              
-              <li>Generate data clusters based on feature proximity determined through k-means and cosine similarity on gender, age and total sentencing points</li>
-              <li>Clusters are generated using distance based clustering (Good explainability)</li>
-              <li>Clustering based matching is less situational than many other matching methods</li>
-            </ul> 
-          </li>
-          <li><strong><span>Model Inputs:</span></strong> 
-            <ul>
-              <li><strong><span>Age:</span></strong> 20-86 years of age </li>
-              <li><strong><span>Gender:</span></strong> M/F </li>
-              <li><strong><span>Total Points:</span></strong> Number of points for the defendent </li> 
-              <li><strong><span> Judge names (only for models with judge name information):</span></strong> Andrews, Quesada, Peters</li>
-            </ul>
-          </li>
-          <li><strong><span>Model Outputs:</span></strong>Sentence Difference in Days, Confidence interval and p-value for the Difference </li>
-          
-          <li> <strong><span>Assumptions:</span></strong>
-            <ul>
-              <li>Stable unit treatment value assumption (SUTVA): Treatment of one unit does not affect the potential outcome of other units</li>
-              <li>Ignorability: Treatment assignment is independent of the potential outcome</li>
-            </ul> 
-          <li> <strong><span>Trade-offs:</span></strong> 
-            <ul>
-              <li>Bias and Variance</li>
-              <li>Matching Explainability</li>
-              <li>Computation Efficiency</li>
-            </ul> 
-          </li></li>  
-          <li> <strong><span>Challenges:</span></strong> The method depends on enough data points for each cluster and may be hard to extend to scenarios with less data points to prove meaningful results</li>
-        </br>
-      </br>
+
         <h3>Bias & Disparity Detection Engine (BDDE):</h3>
           <p>The Bias and Disparity Detection Engine (BDDE) is a public solution created by a team at IBM for analysis of bias in Federal US Sentencing Datasets. The teams goal is to isolate disparity in sentencing at the Federal level between Black vs. White defendants. The BDDE team accomplishes this by comparing the average months of sentencing against a historical profile of actual sentences for similar charges by racial demographics.    </p>
           <li><strong><span>Approach:</span></strong> 
