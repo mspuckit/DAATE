@@ -66,6 +66,9 @@ MODEL ANALYSIS
 |[`Notebooks/ModelAnalysis.ipynb`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres1.pdf)|Analysis of dataset|
 |[`Notebooks/aligning_and_balancing_multiple_datasets`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres1.pdf)|Code file to balance datasets.|
 |[`Notebooks/Causal_finalize.ipynb`](https://github.com/mspuckit/DAATE/blob/main/Models/Causal_finalize.ipynb)|Causal Inference result generation|
+|[`Notebooks/regression_circuitsXcrimes.ipynb`](https://github.com/mspuckit/DAATE/blob/main/Models/regression_circuitsXcrimes.ipynb)|Predictions Circuit Level|
+|[`Notebooks/regression_withJudge.ipynb`](https://github.com/mspuckit/DAATE/blob/main/Models/regression_withJudge.ipynb)|Predictions Judge Level|
+
 DELIVERABLES
 |[`deliverables/DAATE_Pres1.PDF`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres1.pdf)| PDF of presentation 1.|
 |[`deliverables/DAATE_Pres2.PDF`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres2.pdf)| PDF of presentation 2.|
@@ -76,6 +79,8 @@ DATA
 EDA & DATA CLEANSING
 |[`Data_Cleaning_Outliers_ZScore.ipynb`](https://github.com/mspuckit/DAATE/blob/main/EDA%20%26%20Data%20Cleansing/Data_Cleaning_Outliers_ZScore.ipynb)| Data cleansing process & removing outliers
 |[`Initial_EDA_sentencing.ipynb`](https://github.com/mspuckit/DAATE/blob/main/EDA%20%26%20Data%20Cleansing/Initial_EDA_sentencing.ipynb)| Data Exploration & Analysis|
+|[`JudgeCleanups.ipynb`](https://github.com/mspuckit/DAATE/blob/main/Models/JudgeCleanups.ipynb)| Messy Judge Name Cleanups|
+
 
 
 
