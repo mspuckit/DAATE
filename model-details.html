@@ -153,7 +153,7 @@
             <div class="portfolio-info">
               <h3>Model information</h3>
               <ul>
-                <li><strong><span>Model Approaches:</strong></span><a href="https://github.com/mspuckit/DAATE/blob/main/Models/Model_packaged.ipynb">Predictive Model Notebook,</a> <a href="https://github.com/mspuckit/DAATE/blob/main/Models/Model_packaged.ipynb"> Bias & Disparity Dection Engine (BDDE) Notebook</a></li>
+                <li><strong><span>Model Approaches:</strong></span><a href="https://github.com/mspuckit/DAATE/blob/main/Models/regression_circuitsXcrimes.ipynb">Predictive Model Notebook,</a> <a href="https://github.com/mspuckit/DAATE/blob/main/Models/Model_packaged.ipynb"> Bias & Disparity Dection Engine (BDDE) Notebook</a></li>
                 <li><strong>Circuits Used</strong>: CIRCUIT 06 - CLEARWATER, CIRCUIT 11 - MIAMI, CIRCUIT 17 - FT. LAUDERDALE</li>
                 <li><strong>Crime Types Used</strong>: Drugs, Robbery, Burglary, Drivers Licenses</li>
                 <li><strong>List of judges used</strong>: <a href="tryit_caselist.html">Florida Sentencing Details by Judge</a></li>
@@ -218,7 +218,7 @@
         <div class="container">
           <h3>The Use of Judge Name as a Segment in our Predictive and Causal Models</h3>
           <p>Due to direct feedback from our subject matter experts, the predictive and causal modelling approaches have been run with and without judge information for comparison reasons.</p>
-          <p>We chose counties with enough judge information for our modelling purposes and noted that many of the judges names we misspelled, shortened or abbreviated.  We have applied "fuzzy" search logic to group these variations in judges names together.</p>
+          <p>We chose counties with enough judge information for our modelling purposes and noted that many of the judges names we misspelled, shortened or abbreviated.  We have applied "fuzzy" search logic to group these variations in judges names together which you can find in this <a href="https://github.com/mspuckit/DAATE/blob/main/Models/JudgeCleanups.ipynb">notebook.</a></p>
           <li><strong><span>Number of judges used:</span></strong> 3 (Andrews, Quesada, Peters)</li>
           <li> <strong><span>Link to judge reference:</span></strong> <a href="tryit_caselist.html">Florida Sentencing Details by Judge</a></li>
           <li> <strong><span>Challenges:</span></strong> We believe that OCR (or similar) was used to scan court documents as the team encountered several variations of judges names. Fuzzy logic (levenstein distance) was used to collate the judge names and sanity checks were made to ensure accuracy.</li>
