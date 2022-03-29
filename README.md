@@ -77,7 +77,7 @@ DATA
 |[`data/dev-v2.0.json/`](https://github.com/mspuckit/w266_FinalProject/blob/main/data/dev-v2.0.json)| TBD|
 |[`data/train-v2.0.json`](https://github.com/mspuckit/w266_FinalProject/blob/main/data/train-v2.0.json)| TBD|
 EDA & DATA CLEANSING
-|[`Data_Cleaning_Outliers_ZScore.ipynb`](https://github.com/mspuckit/DAATE/blob/main/EDA%20%26%20Data%20Cleansing/Data_Cleaning_Outliers_ZScore.ipynb)| Data cleansing process & removing outliers
+|[`Data_Cleaning_Outliers_ZScore.ipynb`](https://github.com/mspuckit/DAATE/blob/main/EDA%20%26%20Data%20Cleansing/Data_Cleaning_Outliers_ZScore.ipynb)| Data cleansing process & removing outliers| 
 |[`Initial_EDA_sentencing.ipynb`](https://github.com/mspuckit/DAATE/blob/main/EDA%20%26%20Data%20Cleansing/Initial_EDA_sentencing.ipynb)| Data Exploration & Analysis|
 |[`JudgeCleanups.ipynb`](https://github.com/mspuckit/DAATE/blob/main/Models/JudgeCleanups.ipynb)| Messy Judge Name Cleanups|
 
