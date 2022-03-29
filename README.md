@@ -68,10 +68,7 @@ MODEL ANALYSIS
 |[`Notebooks/Causal_finalize.ipynb`](https://github.com/mspuckit/DAATE/blob/main/Models/Causal_finalize.ipynb)|Causal Inference result generation|
 |[`Notebooks/regression_circuitsXcrimes.ipynb`](https://github.com/mspuckit/DAATE/blob/main/Models/regression_circuitsXcrimes.ipynb)|Predictions Circuit Level|
 |[`Notebooks/regression_withJudge.ipynb`](https://github.com/mspuckit/DAATE/blob/main/Models/regression_withJudge.ipynb)|Predictions Judge Level|
-
 DELIVERABLES
-|Directory | Description |
-|:---------|:------------|
 |[`deliverables/DAATE_Pres1.PDF`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres1.pdf)| PDF of presentation 1.|
 |[`deliverables/DAATE_Pres2.PDF`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres2.pdf)| PDF of presentation 2.|
 |[`deliverables/DAATE_Pres3.PDF`](https://github.com/mspuckit/DAATE/blob/main/Deliverables/DAATE_Pres1.pdf)| PDF of presentation 3.|
