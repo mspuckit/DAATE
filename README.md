@@ -20,9 +20,11 @@ There have been recent stories surrounding the challenges within the criminal ju
 
 ### Introduction
 
-Our MVP goal is to provide greater transparency into sentencing of Black and White Americans in the United States (US) criminal justice system, through simple yet impactful analytics beginning first with the Florida Department of Corrections (DOC). In addition to analytics, the DAATE MVP provides statistical guidelines for evidence of sentencing bias through exploring causality, as well as providing easily interpretable, statistical model-based sentence time predictions. 
+Defense Attorney Advisory Tool for Equity (DAATE) is motivated by the desire to explore the inequity in the US criminal justice system. A desire that was realized after becoming aware of research that has shown that approximately five times more Black Americans are being incarcerated than that of White Americans and that Black Americans face harsher treatment than White Americans in the US criminal justice system; with as much as 19.1% longer sentences than White offenders.
 
-DAATE is intended to be an advisory tool for defense attorneys to gain additional insight about potential inequity in sentencing, and to aid in the attorneys case preparation to represent and to seek fair and equal treatment for their client.
+The goal of DAATE is to provide greater transparency into sentencing of Black and White Americans in the United States (US) criminal justice system. Leveraging the Florida Department of Corrections data from 2004-2016, DAATE is intended to be an advisory tool for defense attorneys to gain additional insight about potential inequity in the Florida legal system through simple yet impactful analytics. In addition to analytics, DAATE provides statistical guidelines for evidence of sentencing bias through exploring causality, as well as providing easily interpretable, statistical model-based sentence time predictions. This is accomplished by identifying potential bias in sentences for particular crimes based on a defendants race using various data science techniques.
+
+DAATE is intended to be an advisory tool for defense attorneys to gain additional insight about potential inequity in sentencing, and to aid in the attorney's case preparation to represent and to seek fair and equal treatment for their client.
 
 ### Mission
 
