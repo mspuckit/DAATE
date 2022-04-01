@@ -87,11 +87,11 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Predictive Model Details</h2>
+          <h2>Presentation</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#approach">Approach</a></li>
-            <li>Predictive Model Details</li>
+            <li>Presentation</li>
           </ol>
         </div>
 
@@ -217,9 +217,13 @@
       
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Model information</h3>
+              <h3>Presentation</h3>
               <ul>
-                <li><strong><span>Model Approaches:</strong></span><a href="https://github.com/mspuckit/DAATE/blob/main/Models/regression_circuitsXcrimes.ipynb">Predictive Model Notebook,</a> <a href="https://github.com/Call-for-Code-for-Racial-Justice/bias-detection-engine/blob/main/notebooks/REST_API.ipynb"> Bias & Disparity Dection Engine (BDDE) Notebook</a></li>
+                <li><strong>Data Location</strong>: Florida Department of Corrections</li>
+                <li><strong>Data Category</strong>: Tabular</li>
+                <li><strong>Data Years</strong>: 2004-2016</li>
+                <li><strong>Main EDA Notebook</strong>: <a href="https://github.com/mspuckit/DAATE/blob/main/EDA%20%26%20Data%20Cleansing/Data_Cleaning_Outliers_ZScore.ipynb">EDA Notebook</a></li>
+                <li><strong><span>Model Approaches:</strong></span><a href="https://github.com/mspuckit/DAATE/blob/main/Models/regression_circuitsXcrimes.ipynb">Predictive Model Notebook,</a> <a href="https://github.com/Call-for-Code-for-Racial-Justice/bias-detection-engine/blob/main/notebooks/REST_API.ipynb"> Bias & Disparity Dection Engine (BDDE) Notebook, </a><a href="https://github.com/mspuckit/DAATE/blob/main/Models/Causal_finalize.ipynb"> Causal Model Notebook</a></li>
                 <li><strong>Circuits Used</strong>: CIRCUIT 06 - CLEARWATER, CIRCUIT 11 - MIAMI, CIRCUIT 17 - FT. LAUDERDALE</li>
                 <li><strong>Crime Types Used</strong>: Drugs, Robbery, Burglary, Drivers Licenses</li>
                 <li><strong>List of judges used</strong>: <a href="tryit_caselist.html">Florida Sentencing Details by Judge</a></li>
@@ -299,61 +303,7 @@
         </p>
       </br>
 
-          <h3>Predictive Modelling: </h3>
-          <p>We leveraged pycaret to evaluate 19 algorithms and of the 19 algorithms, the best models were selected by R2 score. Two sets of predictions on sentencing days were created with and without judge name as a variable.</p>
-          
-            <li><strong><span>Algorithms Used:</span></strong> huber, lightgbm, ridge regression  </li>
-            <li><strong><span>Model Inputs:</span></strong> 
-              <ul>
-              <li><strong><span>Age:</span></strong> 20-86 years of age </li>
-              <li><strong><span>Gender:</span></strong> M/F </li>
-              <li><strong><span>Race:</span></strong> Black/White </li> 
-              </ul>
-            <li><strong><span>Model Output:</span></strong>Predicted Sentencing in Days</li>  
-            <li> <strong><span>Assumptions:</span></strong> No omitted variables</li>
-            <li> <strong><span>Trade-offs:</span></strong> Model chosen with slight loss accuracy for faster training times</li>
-            <li> <strong><span>Challenges:</span></strong> Dataset was smaller for the 2nd and 3rd level crime types causing some anomalous predictions</li>
-          </li>
-          </br>
-          </br>
-
-        <h3>Bias & Disparity Detection Engine (BDDE):</h3>
-          <p>The Bias and Disparity Detection Engine (BDDE) is a public solution created by a team at IBM for analysis of bias and disparity in Federal US Sentencing Datasets. The teams goal is to isolate disparity in sentencing at the Federal level between Black vs. White defendants. The BDDE team accomplishes this by comparing the average months of sentencing against a historical profile of actual sentences for similar charges by racial demographics.    </p>
-          <li><strong><span>Approach:</span></strong> 
-            <li><strong><span>Running BDDE:</span></strong> For DAATE, a Bias and Disparity Detection Engine inference Docker container was created following the guidelines on the <a href="https://github.com/Call-for-Code-for-Racial-Justice/bias-detection-engine">Bias & Disparity Detection Engine</a> github page.</li>
-            <ul>
-              <li><strong><span>Circuit Used:</span></strong> CIRCUIT 11 - MIAMI</li>
-              <li><strong><span>Model Inputs:</span></strong> A CSV was created from the Florida DOC dataset that was sent to the BDDE Inference in the created Docker container. This data includes:
-                <ul>
-                  <li><strong><span>Crime Type:</span></strong> Drug Trafficking </li>
-                  <li><strong><span>Amount:</span></strong> 6,7 (units not specified)  </li>
-                  <li><strong><span>Gender:</span></strong> M/F  </li>
-                  <li><strong><span>Race:</span></strong> Black/White</li>
-                </ul> 
-              </li>
-              
-            <li><strong><span>Model Output:</span></strong>Sentence in days </li>
-          
-          <li> <strong><span>Assumptions:</span></strong>
-            <ul>
-              <li>The data set used be BDDE is Circuit 11 - Miami</li>
-              <li>We assumed a level of 6,7 for the amount of possession</li>
-            </ul> 
-          </li>
-          <li> <strong><span>Trade-offs:</span></strong> 
-            <ul>
-              <li>We are using an existing service so no control over functionality</li>
-            </ul> 
-          </li>
-          <li> <strong><span>Challenges:</span></strong>
-            <ul>
-              <li>Documenation was lacking</li>
-              <li>Unclear how to combine these results with our predictive model without "age" as a model input</li>
-              <li>Number of sentencing days returned were much larger than expected</li>
-            </ul> 
-          </li>
-        </br>
-       
+      
         </div>
               
       </section>
