@@ -48,16 +48,16 @@
             <ul>
               <li><a href="data-details.html">Data</a></li>
               <li><a href="arch-details.html">Architecture</a></li>
-              <li><a href="model-details.html">Models</a></li>
-              <li><a href="results-details.html">Results</a></li>
+              <li><a href="model-details.html">Predictive Models</a></li>
+              <li><a href="cmodel-details.html">Causal Model</a></li>
               <li><a href="whatsnext-details.html">Next Steps</a></li>
             </ul>
           </li>
           <li class="dropdown "><a href="#tryit"><span>Try It</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="tryit_one.html">Explore Florida Department of Corrections Data</a></li>
-              <li><a href="tryit_caselist.html">Florida Sentencing Details by Judge</a></li>
               <li><a href="tryit_modelresults.html">Florida Sentencing Model Results</a></li>
+              <li><a href="tryit_caselist.html">Florida Sentencing Details by Judge</a></li>
               <li><a href="tryit_bdde.html">Florida Sentencing BDDE Results</a></li>
             </ul>
           </li>
@@ -87,6 +87,7 @@
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
         <a href="https://youtu.be/5Z9OIYA8He8" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch a Demo</span></a>
       </div>
+    
     </div>
   </section><!-- End Hero -->
 
@@ -105,14 +106,28 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <img src="assets/img/aboutBig.gif" class="img-fluid" alt="">
+          <div class="col-lg-6 d-flex flex-column" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/aboutbig.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <h3>Why DAATE?</h3>
+          </br>
             <p class="fst-italic">
-              Our goal is to provide greater transparency into sentencing in the United States (US) criminal justice system. It is intended as additional or complimentary information for defense attorney's case preparation for their client.
+              The goal of DAATE is to provide greater transparency into sentencing of Black and White Americans in the United States (US) criminal justice system. 
+              Leveraging the Florida Department of Corrections data from 2004-2016, DAATE is intended to be an advisory tool for defense attorneys to gain additional 
+              insight about potential inequity in the Florida legal system through simple yet impactful analytics. In addition to analytics, DAATE provides statistical 
+              guidelines for evidence of sentencing disparity through exploring causality, as well as providing easily interpretable, statistical model-based sentence time 
+              predictions. This is accomplished by identifying potential disparity in sentences for particular crimes based on a defendants race using various data science techniques.
+            </br>
+            </br>
+          </br>
+            DAATE is intended to be an advisory tool for defense attorneys to gain additional insight about potential inequity in sentencing, 
+            and to aid in the attorney's case preparation to represent and to seek <strong>fair and equal</strong> treatment for their client. 
+            
             </p>
+            
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-right" data-aos-delay="100">
             <ul>
               <li>
                 <i class="bx bx-stats"></i>
@@ -121,6 +136,10 @@
                   <p>Approximately <b>five times more Black Americans are being incarcerated</b> than that of White Americans</p>
                 </div>
               </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-left" data-aos-delay="100">
+            <ul>
               <li>
                 <i class="bx bx-stopwatch"></i>
                 <div>
@@ -129,7 +148,6 @@
                 </div>
               </li>
             </ul>
-            
           </div>
         </div>
     
@@ -303,16 +321,27 @@
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-data">Data</li>
               <li data-filter=".filter-arch">Architecture</li>
-              <li data-filter=".filter-model">Models</li>
-              <li data-filter=".filter-results">Results</li>
+              <li data-filter=".filter-pmodel">Predictive Models</li>
+              <li data-filter=".filter-cmodel">Causal Model</li>
               <li data-filter=".filter-nextsteps">Next Steps</li>
+              <li data-filter=".filter-preso">Presentation</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-arch">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-data filter-preso">
+            <img src="assets/img/portfolio/data_overview.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Data used in DAATE</h4>
+              <p>A glimpse at the Florida Department of Corrections data</p>
+              <a href="assets/img/portfolio/data_overview.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DAATE MVP Data"><i class="bx bx-plus"></i></a>
+              <a href="preso-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-arch filter-preso">
             <img src="assets/img/portfolio/MVPArch.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>MVP Architecture (v0.01)</h4>
@@ -322,7 +351,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-model">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pmodel filter-preso">
             <img src="assets/img/portfolio/predmodel.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Predictive Model Architecture</h4>
@@ -353,6 +382,15 @@
             </div>
           </div>
           
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pmodel filter-preso">
+            <img src="assets/img/portfolio/pmodel_results.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Predictive Model Results</h4>
+              <p>An overview of the DAATE MVP predictive model results</p>
+              <a href="assets/img/portfolio/pmodel_results.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Predictive Model Results"><i class="bx bx-plus"></i></a>
+              <a href="model-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-data">
             <img src="assets/img/portfolio/DataEDAOutliers.jpg" class="img-fluid" alt="">
@@ -364,17 +402,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-nextsteps" >
-            <img src="assets/img/portfolio/challenges.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Challenges</h4>
-              <p>An overview of some of the challenges the DAATE team faced.</p>
-              <a href="assets/img/portfolio/challenges.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DAATE Challenges"><i class="bx bx-plus"></i></a>
-              <a href="whatsnext-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          
+                   
           <div class="col-lg-4 col-md-6 portfolio-item filter-data">
             <img src="assets/img/portfolio/DataEDATotalPoints.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
@@ -385,27 +413,29 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-model">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cmodel filter-preso">
             <img src="assets/img/portfolio/causalmod.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Causal Model Architecture</h4>
               <p>A look at the causal model approach for DAATE MVP</p>
               <a href="assets/img/portfolio/causalmod.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Causal Model Architecture"><i class="bx bx-plus"></i></a>
-              <a href="model-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="cmodel-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-nextsteps" >
-            <img src="assets/img/portfolio/roadmap.jpg" class="img-fluid" alt="">
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cmodel filter-preso">
+            <img src="assets/img/portfolio/causal_approach.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Roadmap and Recommendations</h4>
-              <p>An overview on the DAATE roadmap based on recommendations.</p>
-              <a href="assets/img/portfolio/roadmap.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DAATE Roadmap"><i class="bx bx-plus"></i></a>
-              <a href="whatsnext-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <h4>Causal Model Approach</h4>
+              <p>A look at the causal model approach for DAATE MVP</p>
+              <a href="assets/img/portfolio/causal_approach.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Causal Model Approach"><i class="bx bx-plus"></i></a>
+              <a href="cmodel-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-arch filter-nextsteps">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-arch filter-nextsteps ">
             <img src="assets/img/portfolio/FutureArch.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Future Architecture</h4>
@@ -414,28 +444,74 @@
               <a href="arch-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-results">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="whatsnext-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-model">
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pmodel filter-preso">
             <img src="assets/img/portfolio/bdde_model.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>BDDE Model Architecture</h4>
               <p>Some of the challenges the team faced while developing the DAATE MVP</p>
               <a href="assets/img/portfolio/bdde_model.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="BDDE Model Architecture"><i class="bx bx-plus"></i></a>
-              <a href="results-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              <a href="model-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-pmodel filter-preso">
+            <img src="assets/img/portfolio/bdde_results.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>BDDE Model Results</h4>
+              <p>An overview of the DAATE MVP BDDE model results</p>
+              <a href="assets/img/portfolio/bdde_results.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="BDDE Model Results"><i class="bx bx-plus"></i></a>
+              <a href="model-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
-        </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cmodel filter-preso">
+            <img src="assets/img/portfolio/causal_eval.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Causal Model Evaluation</h4>
+              <p>A look at the causal model approach for DAATE MVP</p>
+              <a href="assets/img/portfolio/causal_eval.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Causal model evaluation"><i class="bx bx-plus"></i></a>
+              <a href="cmodel-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cmodel filter-preso">
+            <img src="assets/img/portfolio/causal_results.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Causal Model Results</h4>
+              <p>A look at the causal model approach for DAATE MVP</p>
+              <a href="assets/img/portfolio/causal_results.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Causal Model Results"><i class="bx bx-plus"></i></a>
+              <a href="cmodel-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-nextsteps filter-preso" >
+            <img src="assets/img/portfolio/roadmap.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Roadmap and Recommendations</h4>
+              <p>An overview on the DAATE roadmap based on recommendations.</p>
+              <a href="assets/img/portfolio/roadmap.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DAATE Roadmap"><i class="bx bx-plus"></i></a>
+              <a href="whatsnext-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-nextsteps filter-preso" >
+            <img src="assets/img/portfolio/learnings.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Takeaway and Learnings</h4>
+              <p>An overview of some of the takeaways and learnnigs from the DAATE MVP.</p>
+              <a href="assets/img/portfolio/learnings.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="DAATE Takeaways and Learnings"><i class="bx bx-plus"></i></a>
+              <a href="whatsnext-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          </div>
+
+        
 
       </div>
     </section><!-- End Approach Section -->
@@ -460,14 +536,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="tryit_caselist.html">Florida Sentencing Details by Judge</a></h4>
-              <p>Use this dashboard to select a judge to see the corresponding sentencing data associated to them.</p>
-            </div>
-          </div>
-
+          
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
@@ -476,6 +545,14 @@
             </div>
           </div>
           
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4><a href="tryit_caselist.html">Florida Sentencing Details by Judge</a></h4>
+              <p>Use this dashboard to select a judge to see the corresponding sentencing data associated to them.</p>
+            </div>
+          </div>
+
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-world"></i></div>
@@ -507,12 +584,12 @@
 
           <div class="swiper-slide">
             <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
+              <img src="assets/img/testimonials/MichaelBraga.jpg" class="testimonial-img" alt="">
+              <h3>Michael Braga</h3>
+              <h4>Pulitzer Winning Journalist/Investigations Editor for the Arizona Republic</h4>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                Our team of reporters and editors at the Sarasota Herald Tribune and at USA TODAY always believed that there was tremendous potential to use criminal justice data to help bring about equity in sentencing and to shine a light on judges, prosecutors and law enforcement officials who might not even understand the ways in which they are tilting justice in favor of one group or another. We are grateful that the team that built DAATE recognized that potential and created the foundation for a tool that could be used by defense attorneys to right some the injustices that have plagued the United States for hundreds of years.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
@@ -622,7 +699,7 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/team-3a.jpg" class="img-fluid" alt="">
                 <div class="social">
                   <a href="https://www.linkedin.com/in/song-park/"><i class="bi bi-linkedin"></i></a>
                 </div>
