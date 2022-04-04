@@ -32,7 +32,7 @@ To empower legal professionals to realize fairness and equity for their clients 
 
 ### Our Results
 
-
+For a look at our MVP results, please visit our website at https://mspuckit.github.io/DAATE/
 
 ## Navigating the Files in this Repository
 
