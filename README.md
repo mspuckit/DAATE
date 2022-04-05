@@ -39,7 +39,7 @@ The DAATE MVP leverages Microsoft Azure Cloud infrastructure to host the synchro
 - Ingest the Florida Department of Corrections (DOC) data from 2004-2016 to Azure Blob Storage
 - Leverage Databricks to move to Azure SQL DB table
 - Elastic search, Azure ML and Python to perform EDA and create MVP Azure SQL table
-- Leverage Bias and Disparity Detection API via Docker container updating MPV Azure SQL table
+- Leverage [Bias and Disparity Detection Engine](https://github.com/Call-for-Code-for-Racial-Justice/bias-detection-engine) API via Docker container updating MPV Azure SQL table
 - Perform multi-modelling in Azure ML and Python updating the MPV Azure SQL table
 - Tableau is used to access MVP Azure SQL table to create dashboard
 - GitHub pages are used to serve up the DAATE website
