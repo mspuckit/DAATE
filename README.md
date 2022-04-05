@@ -1,18 +1,19 @@
 # Defense Attorney Advisory Tool for Equity (DAATE)
 
-# W210-FinalProject:  Synthetic Capstone project   
+### W210-FinalProject:  Synthetic Capstone project   
 
 ### Team: Jackie Nichols, Hao Wu, Song Park, Robert Ling
 
 #### W210.4 Wednesday @4:00pmPT 2022
 
+#### Summary
+
+This repo contains work performed by Jackie Nichols, Hao Wu, Song Park, and Robert Link for our capstone project in W210 at UC Berkeley.  
 
 ![](https://i.imgur.com/tl1ylHn.jpg)
 
 
-## Summary
 
-This repo contains work performed by Jackie Nichols, Hao Wu, Song Park, and Robert Link for our capstone project in W210 at UC Berkeley.  
 
 ## Abstract
 
