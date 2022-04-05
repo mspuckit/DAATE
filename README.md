@@ -4,7 +4,7 @@
 
 
 # W210-FinalProject:  Synthetic Capstone project   
-## Team: Jackie Nichols, Hao Wu, Song Park, Robert Ling
+Team: Jackie Nichols, Hao Wu, Song Park, Robert Ling
 W210.4 Wednesday @4:00pmPT 2022
 
 ## Summary
