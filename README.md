@@ -1,8 +1,10 @@
 # W210-FinalProject:  Synthetic Capstone project  
 
+![](https://i.imgur.com/tl1ylHn.jpg)
+
 # Defense Attorney Advisory Tool for Equity (DAATE)
  
-# Team: Jackie Nichols, Hao Wu, Song Park, Robert Ling
+## Team: Jackie Nichols, Hao Wu, Song Park, Robert Ling
 W210.4 Wednesday @4:00pmPT 2022
 
 ## Summary
@@ -11,12 +13,13 @@ This repo contains work performed by Jackie Nichols, Hao Wu, Song Park, and Robe
 
 ## Abstract
 
-There have been recent stories surrounding the challenges within the criminal justice system that have been brought to light as a result of greater access to data. For example, some recent research has shown that African Americans face harsher treatment than whites in the criminal justice system. Minority groups in general tend to face harsher sentencing including longer prison sentences. Equity in the criminal justice system is in question and there is data that help provide greater transparency around the criminal justice system. Drawing inspiration from the following 
+There have been concerns surrounding sentencing challenges within the criminal justice system that have been brought to light recently as a result of greater access to data. For example, some recent research has shown that African Americans face harsher treatment than whites in the criminal justice system. Minority groups in general tend to face harsher sentencing including longer prison sentences. Equity in the criminal justice system is in question and there is data that help provide greater transparency around the criminal justice system. Drawing inspiration from the following 
 
 - the award-winning "Bias on the Bench" 2016 series from the Sarasota Herald-Tribune, (http://projects.heraldtribune.com/bias/) 
 - The story of Walter McMillian, who, with the help of Bryan Stevenson a defense attorney, appealed his murder conviction as depicted in the movie Just Mercy
 - The team at American Equity and Justice Group whose goal is to provide transparency into the WA criminal justice system
 
+the DAATE team apply data science techniques in a 12-week MVP to data from the Florida Department of Corrections (2004-2016) to investigate disparity in sentencing.
 
 ### Introduction
 
@@ -30,9 +33,28 @@ DAATE is intended to be an advisory tool for defense attorneys to gain additiona
 
 To empower legal professionals to realize fairness and equity for their clients by providing transparency into sentencing in the US criminal justice system using data science techniques.
 
+### MVP Architecture
+
+The DAATE MVP leverages Microsoft Azure Cloud infrastructure to host the synchronous pipeline and data ingestion and processing. The Florida Department of Corrections (DOC) data from 2004-2016 was used and stored in this infrastructure. This backend is used for processing the DOC data through various modelling techniques and is built for high scalability and modularity. The data and modelling results are accessed by Tableau and served on this site via GitHub pages. The pipeline and process consists of multiple stages:
+
+- Ingest the Florida Department of Corrections (DOC) data from 2004-2016 to Azure Blob Storage
+- Leverage Databricks to move to Azure SQL DB table
+- Elastic search, Azure ML and Python to perform EDA and create MVP Azure SQL table
+- Leverage [Bias and Disparity Detection Engine](https://github.com/Call-for-Code-for-Racial-Justice/bias-detection-engine) API via Docker container updating MPV Azure SQL table
+- Perform multi-modelling in Azure ML and Python updating the MPV Azure SQL table
+- Tableau is used to access MVP Azure SQL table to create dashboard
+- GitHub pages are used to serve up the DAATE website
+
+![](https://i.imgur.com/tePpTxf.jpg)
+
 ### Our Results
 
-For a look at our MVP results, please visit our website at https://mspuckit.github.io/DAATE/
+For a look at our MVP, please visit our website at https://mspuckit.github.io/DAATE/ and our Try It section that has 4 dashboards with our MVP results around sentencing disparity:
+
+- [Explore Florida Department of Corrections Data](https://mspuckit.github.io/DAATE/tryit_one.html): Contains analytics as well as Causal and Predictive Model Results
+- [Florida Sentencing Model Results](https://mspuckit.github.io/DAATE/tryit_modelresults.html): Use this dashboard to view overall causal and predictive model results for a subset of Florida circuits
+- [Florida Sentencing Details by Judge](https://mspuckit.github.io/DAATE/tryit_caselist.html): Use this dashboard to select a judge to see the corresponding sentencing data associated to them
+- [Florida Sentencing Bias & Disparity Detection Engine Results](https://mspuckit.github.io/DAATE/tryit_bdde.html): See the results from leveraging the Bias Detection Engine on a subset of the Florida DOC data
 
 ## Navigating the Files in this Repository
 
