@@ -19,7 +19,7 @@ There have been concerns surrounding sentencing challenges within the criminal j
 - The story of Walter McMillian, who, with the help of Bryan Stevenson a defense attorney, appealed his murder conviction as depicted in the movie Just Mercy
 - The team at American Equity and Justice Group whose goal is to provide transparency into the WA criminal justice system
 
-the DAATE team apply data science techniques in a 12 week MVP to data from the Florida Department of Corrections (2004-2016) to invetigate disparity in sentencing.
+the DAATE team apply data science techniques in a 12-week MVP to data from the Florida Department of Corrections (2004-2016) to investigate disparity in sentencing.
 
 ### Introduction
 
