@@ -51,7 +51,7 @@ The DAATE MVP leverages Microsoft Azure Cloud infrastructure to host the synchro
 
 ![](https://i.imgur.com/tePpTxf.jpg)
 
-### Our Results
+### MVP Results
 
 For a look at our MVP, please visit our website at https://mspuckit.github.io/DAATE/ and our Try It section that has 4 dashboards with our MVP results around sentencing disparity:
 
