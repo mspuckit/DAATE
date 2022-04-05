@@ -49,7 +49,12 @@ The DAATE MVP leverages Microsoft Azure Cloud infrastructure to host the synchro
 
 ### Our Results
 
-For a look at our MVP results, please visit our website at https://mspuckit.github.io/DAATE/
+For a look at our MVP, please visit our website at https://mspuckit.github.io/DAATE/ and our Try It section that has 4 dashboards with our MVP results around sentencing disparity:
+
+- [Explore Florida Department of Corrections Data](https://mspuckit.github.io/DAATE/tryit_one.html): Contains analytics as well as Causal and Predictive Model Results
+- [Florida Sentencing Model Results](https://mspuckit.github.io/DAATE/tryit_modelresults.html): Use this dashboard to view overall causal and predictive model results for a subset of Florida circuits
+- [Florida Sentencing Details by Judge](https://mspuckit.github.io/DAATE/tryit_caselist.html): Use this dashboard to select a judge to see the corresponding sentencing data associated to them
+- [Florida Sentencing Bias & Disparity Detection Engine Results](https://mspuckit.github.io/DAATE/tryit_bdde.html): See the results from leveraging the Bias Detection Engine on a subset of the Florida DOC data
 
 ## Navigating the Files in this Repository
 
