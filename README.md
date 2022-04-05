@@ -30,6 +30,20 @@ DAATE is intended to be an advisory tool for defense attorneys to gain additiona
 
 To empower legal professionals to realize fairness and equity for their clients by providing transparency into sentencing in the US criminal justice system using data science techniques.
 
+### MVP Architecture
+
+The DAATE MVP leverages Microsoft Azure Cloud infrastructure to host the synchronous pipeline and data ingestion and processing. The Florida Department of Corrections (DOC) data from 2004-2016 was used and stored in this infrastructure. This backend is used for processing the DOC data through various modelling techniques and is built for high scalability and modularity. The data and modelling results are accessed by Tableau and served on this site via GitHub pages. The pipeline and process consists of multiple stages:
+
+- Ingest the Florida Department of Corrections (DOC) data from 2004-2016 to Azure Blob Storage
+- Leverage Databricks to move to Azure SQL DB table
+- Elastic search, Azure ML and Python to perform EDA and create MVP Azure SQL table
+- Leverage Bias and Disparity Detection API via Docker container updating MPV Azure SQL table
+- Perform multi-modelling in Azure ML and Python updating the MPV Azure SQL table
+- Tableau is used to access MVP Azure SQL table to create dashboard
+- GitHub pages are used to serve up the DAATE website
+
+
+
 ### Our Results
 
 For a look at our MVP results, please visit our website at https://mspuckit.github.io/DAATE/
