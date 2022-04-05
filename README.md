@@ -13,12 +13,13 @@ This repo contains work performed by Jackie Nichols, Hao Wu, Song Park, and Robe
 
 ## Abstract
 
-There have been recent stories surrounding the challenges within the criminal justice system that have been brought to light as a result of greater access to data. For example, some recent research has shown that African Americans face harsher treatment than whites in the criminal justice system. Minority groups in general tend to face harsher sentencing including longer prison sentences. Equity in the criminal justice system is in question and there is data that help provide greater transparency around the criminal justice system. Drawing inspiration from the following 
+There have been concerns surrounding sentencing challenges within the criminal justice system that have been brought to light recently as a result of greater access to data. For example, some recent research has shown that African Americans face harsher treatment than whites in the criminal justice system. Minority groups in general tend to face harsher sentencing including longer prison sentences. Equity in the criminal justice system is in question and there is data that help provide greater transparency around the criminal justice system. Drawing inspiration from the following 
 
 - the award-winning "Bias on the Bench" 2016 series from the Sarasota Herald-Tribune, (http://projects.heraldtribune.com/bias/) 
 - The story of Walter McMillian, who, with the help of Bryan Stevenson a defense attorney, appealed his murder conviction as depicted in the movie Just Mercy
 - The team at American Equity and Justice Group whose goal is to provide transparency into the WA criminal justice system
 
+the DAATE team apply data science techniques in a 12 week MVP to data from the Florida Department of Corrections (2004-2016) to invetigate disparity in sentencing.
 
 ### Introduction
 
