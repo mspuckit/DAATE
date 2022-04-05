@@ -1,9 +1,9 @@
-# W210-FinalProject:  Synthetic Capstone project  
+# Defense Attorney Advisory Tool for Equity (DAATE)
 
 ![](https://i.imgur.com/tl1ylHn.jpg)
 
-# Defense Attorney Advisory Tool for Equity (DAATE)
- 
+
+# W210-FinalProject:  Synthetic Capstone project   
 ## Team: Jackie Nichols, Hao Wu, Song Park, Robert Ling
 W210.4 Wednesday @4:00pmPT 2022
 
