@@ -1,15 +1,19 @@
-# W210-FinalProject:  Synthetic Capstone project  
+# Defense Attorney Advisory Tool for Equity (DAATE)
+
+### W210-FinalProject:  Synthetic Capstone project   
+
+### Team: Jackie Nichols, Hao Wu, Song Park, Robert Ling
+
+#### W210.4 Wednesday @4:00pmPT 2022
+
+#### Summary
+
+This repo contains work performed by Jackie Nichols, Hao Wu, Song Park, and Robert Link for our capstone project in W210 at UC Berkeley.  
 
 ![](https://i.imgur.com/tl1ylHn.jpg)
 
-# Defense Attorney Advisory Tool for Equity (DAATE)
- 
-## Team: Jackie Nichols, Hao Wu, Song Park, Robert Ling
-W210.4 Wednesday @4:00pmPT 2022
 
-## Summary
 
-This repo contains work performed by Jackie Nichols, Hao Wu, Song Park, and Robert Link for our capstone project in W210 at UC Berkeley.  
 
 ## Abstract
 
@@ -47,7 +51,7 @@ The DAATE MVP leverages Microsoft Azure Cloud infrastructure to host the synchro
 
 ![](https://i.imgur.com/tePpTxf.jpg)
 
-### Our Results
+### MVP Results
 
 For a look at our MVP, please visit our website at https://mspuckit.github.io/DAATE/ and our Try It section that has 4 dashboards with our MVP results around sentencing disparity:
 
