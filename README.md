@@ -82,6 +82,7 @@ WEB SITE
 |[`data-details.html`](https://github.com/mspuckit/DAATE/blob/main/data-details.html)|Data details page for DAATE.|
 |[`model-details.html`](https://github.com/mspuckit/DAATE/blob/main/model-details.html)|Model details page for DAATE.|
 |[`results-details.html`](https://github.com/mspuckit/DAATE/blob/main/results-details.html)|Results details page for DAATE.|
+|[`references.html`](https://github.com/mspuckit/DAATE/blob/main/references.html)|List of references used during the creation of DAATE.|
 |[`whatsnext-details.html`](https://github.com/mspuckit/DAATE/blob/main/whatsnext-details.html)|Next Steps details page for DAATE.|
 |[`terms.html`](https://github.com/mspuckit/DAATE/blob/main/terms.html)|Terms of Use page for DAATE.|
 |[`privacy.html`](https://github.com/mspuckit/DAATE/blob/main/privacy.html)|Privacy Policy for DAATE.|
