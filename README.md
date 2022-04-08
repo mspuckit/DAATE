@@ -49,7 +49,7 @@ The DAATE MVP leverages Microsoft Azure Cloud infrastructure to host the synchro
 - Tableau is used to access MVP Azure SQL table to create dashboard
 - GitHub pages are used to serve up the DAATE website
 
-![](https://i.imgur.com/tePpTxf.jpg)
+![](https://i.imgur.com/hdaoGPN.jpg)
 
 ### MVP Results
 
