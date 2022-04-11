@@ -58,7 +58,7 @@ For a look at our MVP, please visit our website at https://mspuckit.github.io/DA
 - [Explore Florida Department of Corrections Data](https://mspuckit.github.io/DAATE/tryit_one.html): Contains analytics as well as Causal and Predictive Model Results
 - [Florida Sentencing Model Results](https://mspuckit.github.io/DAATE/tryit_modelresults.html): Use this dashboard to view overall causal and predictive model results for a subset of Florida circuits
 - [Florida Sentencing Details by Judge](https://mspuckit.github.io/DAATE/tryit_caselist.html): Use this dashboard to select a judge to see the corresponding sentencing data associated to them
-- [Florida Sentencing Bias & Disparity Detection Engine Results](https://mspuckit.github.io/DAATE/tryit_bdde.html): See the results from leveraging the Bias Detection Engine on a subset of the Florida DOC data
+- [Florida Sentencing Bias & Disparity Detection Engine Results](https://mspuckit.github.io/DAATE/tryit_bdde.html): See the results from leveraging the Bias Detection Engine on Miami data for comparison to DAATE results.
 
 ## Navigating the Files in this Repository
 
